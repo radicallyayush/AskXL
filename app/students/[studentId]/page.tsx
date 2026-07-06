@@ -29,7 +29,7 @@ export default function StudentProfilePage({ params }: PageProps) {
         <Card className="overflow-hidden border-sky-100 bg-white shadow-[0_10px_30px_rgba(59,130,246,0.08)]">
           <CardHeader className="border-b border-sky-50 bg-gradient-to-br from-sky-50 via-white to-violet-50">
             <p className="text-sm uppercase tracking-[0.24em] text-sky-500">Student Profile</p>
-            <CardTitle className="text-4xl">{student.name}</CardTitle>
+            <CardTitle className="text-4xl text-slate-900">{student.name}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-base leading-7 text-slate-600">{summarizeStudent(student)}</p>
@@ -45,7 +45,7 @@ export default function StudentProfilePage({ params }: PageProps) {
 
         <Card className="overflow-hidden border-violet-100 bg-white shadow-[0_10px_30px_rgba(139,92,246,0.08)]">
           <CardHeader className="border-b border-violet-50 bg-gradient-to-br from-violet-50 via-white to-fuchsia-50">
-            <CardTitle>AI Summary</CardTitle>
+            <CardTitle className="text-slate-900">AI Summary</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <p className="text-sm leading-6 text-slate-600">{summarizeStudent(student)}</p>
@@ -58,16 +58,16 @@ export default function StudentProfilePage({ params }: PageProps) {
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         <Card className="border-sky-100 bg-gradient-to-br from-sky-50 to-white">
-          <CardHeader><CardTitle>Courses</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-sky-700">{student.analytics.course_count}</p></CardContent>
+          <CardHeader><CardTitle className="text-slate-900">Courses</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-sky-700">{student.analytics.course_count}</p></CardContent>
         </Card>
         <Card className="border-violet-100 bg-gradient-to-br from-violet-50 to-white">
-          <CardHeader><CardTitle>Projects</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-violet-700">{student.analytics.project_count}</p></CardContent>
+          <CardHeader><CardTitle className="text-slate-900">Projects</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-violet-700">{student.analytics.project_count}</p></CardContent>
         </Card>
         <Card className="border-emerald-100 bg-gradient-to-br from-emerald-50 to-white">
-          <CardHeader><CardTitle>Attendance</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-emerald-700">{student.attendance.overall_pct.toFixed(1)}%</p></CardContent>
+          <CardHeader><CardTitle className="text-slate-900">Attendance</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-emerald-700">{student.attendance.overall_pct.toFixed(1)}%</p></CardContent>
         </Card>
         <Card className="border-amber-100 bg-gradient-to-br from-amber-50 to-white">
-          <CardHeader><CardTitle>Marks</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-amber-700">{student.analytics.average_marks_100.toFixed(1)}</p></CardContent>
+          <CardHeader><CardTitle className="text-slate-900">Marks</CardTitle></CardHeader><CardContent><p className="text-3xl font-semibold text-amber-700">{student.analytics.average_marks_100.toFixed(1)}</p></CardContent>
         </Card>
       </div>
 
@@ -76,7 +76,7 @@ export default function StudentProfilePage({ params }: PageProps) {
       <div className="grid gap-6 lg:grid-cols-3">
         <Card className="lg:col-span-2 overflow-hidden border-sky-100 bg-white shadow-[0_10px_30px_rgba(59,130,246,0.06)]">
           <CardHeader className="border-b border-sky-50 bg-gradient-to-br from-sky-50 via-white to-cyan-50">
-            <CardTitle>Academic history</CardTitle>
+            <CardTitle className="text-slate-900">Academic history</CardTitle>
           </CardHeader>
           <CardContent className="overflow-x-auto">
             <table className="w-full text-left text-sm">
@@ -107,7 +107,7 @@ export default function StudentProfilePage({ params }: PageProps) {
 
         <Card className="overflow-hidden border-emerald-100 bg-white shadow-[0_10px_30px_rgba(20,184,166,0.06)]">
           <CardHeader className="border-b border-emerald-50 bg-gradient-to-br from-emerald-50 via-white to-teal-50">
-            <CardTitle>Skills</CardTitle>
+            <CardTitle className="text-slate-900">Skills</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap gap-2">
             {student.skills.length ? student.skills.map((skill) => <Badge key={skill} className="border-emerald-100 bg-emerald-50 text-emerald-700">{skill}</Badge>) : <p className="text-sm text-slate-500">No inferred skills yet.</p>}
@@ -118,7 +118,7 @@ export default function StudentProfilePage({ params }: PageProps) {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="overflow-hidden border-violet-100 bg-white shadow-[0_10px_30px_rgba(139,92,246,0.06)]">
           <CardHeader className="border-b border-violet-50 bg-gradient-to-br from-violet-50 via-white to-fuchsia-50">
-            <CardTitle>Projects</CardTitle>
+            <CardTitle className="text-slate-900">Projects</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {student.projects.length ? (
@@ -137,7 +137,7 @@ export default function StudentProfilePage({ params }: PageProps) {
 
         <Card className="overflow-hidden border-amber-100 bg-white shadow-[0_10px_30px_rgba(245,158,11,0.06)]">
           <CardHeader className="border-b border-amber-50 bg-gradient-to-br from-amber-50 via-white to-orange-50">
-            <CardTitle>Grade details</CardTitle>
+            <CardTitle className="text-slate-900">Grade details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {student.grades.map((grade) => (
