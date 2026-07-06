@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 
-import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/components/ui/utils";
 
 type NavItem = {
@@ -82,9 +81,6 @@ export function CollapsibleSidebar({ profileHref, collapsed, onToggle }: Sidebar
         <p className={cn("mt-2 text-sm text-slate-600 transition-all duration-300", collapsed && "w-0 overflow-hidden opacity-0")}>
           Generated JSON only. CSV sources stay in input/.
         </p>
-        <div className="mt-4 flex items-center justify-between gap-3">
-          <ThemeToggle />
-        </div>
       </div>
     </aside>
   );
