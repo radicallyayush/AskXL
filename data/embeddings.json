@@ -1,0 +1,84 @@
+{
+  "embeddings": [
+    {
+      "student_id": "S001",
+      "text": "Ananya Rao PGDM-HRM Term 1 CGPA 9.23 Attendance 90.0 Forecasting Time Series Business Statistics HR Analytics People Analytics Organizational Behaviour Business Statistics HR Analytics Consumer Behaviour Business Communication A+ A+ A+ A+ A+ Forecasting Retail Demand Using Time Series Models Forecasting Time Series Business Statistics HR Analytics People Analytics project-linked"
+    },
+    {
+      "student_id": "S002",
+      "text": "Rohan Mehta PGDM-GM Term 2 CGPA 8.51 Attendance 81.56 Marketing Analytics SQL Tableau HR Analytics People Analytics Marketing Analytics Organizational Behaviour Business Statistics HR Analytics Operations Research A- A A A A Marketing Analytics SQL Tableau HR Analytics People Analytics unknown"
+    },
+    {
+      "student_id": "S003",
+      "text": "Fatima Sheikh PGDM Term 6 CGPA 7.09 Attendance 83.6 Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting Marketing Analytics Corporate Finance Supply Chain Strategy Corporate Strategy Business Communication B B- B B B- Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S004",
+      "text": "Karan Verma PGDM Term 6 CGPA 7.15 Attendance 92.6 HR Analytics People Analytics Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting Marketing Analytics Corporate Finance HR Analytics Corporate Strategy Business Communication B- B B B- B Attrition Root-Cause Study for a Manufacturing Client HR Analytics People Analytics Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S005",
+      "text": "Ishaan Nair PGDM-GM Term 1 CGPA 9.42 Attendance 89.08 HR Analytics People Analytics Corporate Finance Modeling Strategy Consulting Corporate Finance Supply Chain Strategy Organizational Behaviour HR Analytics Corporate Strategy A+ A+ A+ A+ A+ Attrition Root-Cause Study for a Manufacturing Client HR Analytics People Analytics Corporate Finance Modeling Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S006",
+      "text": "Priya Iyer PGDM-HRM Term 1 CGPA 8.42 Attendance 90.6 Marketing Analytics SQL Tableau Strategy Consulting HR Analytics People Analytics Marketing Analytics Organizational Behaviour HR Analytics Consumer Behaviour Corporate Strategy A- A- A A- A- Marketing Analytics SQL Tableau Strategy Consulting HR Analytics People Analytics unknown"
+    },
+    {
+      "student_id": "S007",
+      "text": "Aditya Kapoor PGDM Term 2 CGPA 7.89 Attendance 87.14 Corporate Finance Modeling Strategy Consulting Corporate Finance Business Statistics Consumer Behaviour Corporate Strategy Business Communication B+ A- B+ B+ B+ Corporate Finance Modeling Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S008",
+      "text": "Meera Das PGDM Term 5 CGPA 7.95 Attendance 86.44 Forecasting Time Series Business Statistics Strategy Consulting HR Analytics People Analytics Supply Chain Strategy Organizational Behaviour Business Statistics HR Analytics Consumer Behaviour B+ A- B+ A- B+ Forecasting Retail Demand Using Time Series Models Forecasting Time Series Business Statistics Strategy Consulting HR Analytics People Analytics project-linked"
+    },
+    {
+      "student_id": "S009",
+      "text": "Vikram Bhattacharya PGDM Term 2 CGPA 8.8 Attendance 82.08 Marketing Analytics SQL Tableau Corporate Finance Modeling Marketing Analytics Corporate Finance Operations Research Consumer Behaviour Business Communication A A+ A- A A Marketing Analytics SQL Tableau Corporate Finance Modeling unknown"
+    },
+    {
+      "student_id": "S010",
+      "text": "Sneha Menon PGDM-GM Term 6 CGPA 8.59 Attendance 85.32 Marketing Analytics SQL Tableau Strategy Consulting Marketing Analytics Supply Chain Strategy Organizational Behaviour Operations Research Consumer Behaviour A A A A- A Marketing Analytics SQL Tableau Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S011",
+      "text": "Arjun Chandra PGDM Term 2 CGPA 6.38 Attendance 86.64 Marketing Analytics SQL Tableau Strategy Consulting Marketing Analytics Business Statistics Consumer Behaviour Corporate Strategy Business Communication C+ B- C+ B- C+ Marketing Analytics SQL Tableau Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S012",
+      "text": "Divya Ghosh PGDM Term 3 CGPA 7.27 Attendance 89.68 Corporate Finance Modeling Strategy Consulting Corporate Finance Supply Chain Strategy Organizational Behaviour Corporate Strategy Business Communication B- B+ B B B Corporate Finance Modeling Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S013",
+      "text": "Rahul Malhotra PGDM-GM Term 1 CGPA 6.91 Attendance 91.82 Forecasting Time Series Business Statistics HR Analytics People Analytics Strategy Consulting Supply Chain Strategy Organizational Behaviour Business Statistics HR Analytics Operations Research B- B B- B B- Forecasting Retail Demand Using Time Series Models Attrition Root-Cause Study for a Manufacturing Client Forecasting Time Series Business Statistics HR Analytics People Analytics Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S014",
+      "text": "Neha Reddy PGDM-GM Term 2 CGPA 8.26 Attendance 85.56 Forecasting Time Series Business Statistics Corporate Finance Modeling Strategy Consulting Corporate Finance Supply Chain Strategy Organizational Behaviour Business Statistics Operations Research A- A- A- A- A- Forecasting Retail Demand Using Time Series Models Forecasting Time Series Business Statistics Corporate Finance Modeling Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S015",
+      "text": "Siddharth Joshi PGDM-HRM Term 3 CGPA 9.28 Attendance 82.74 HR Analytics People Analytics Marketing Analytics SQL Tableau Strategy Consulting Marketing Analytics Organizational Behaviour HR Analytics Consumer Behaviour Corporate Strategy A+ A+ A+ A+ A+ Attrition Root-Cause Study for a Manufacturing Client HR Analytics People Analytics Marketing Analytics SQL Tableau Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S016",
+      "text": "Kavya Pillai PGDM Term 2 CGPA 6.94 Attendance 84.12 Strategy Consulting HR Analytics People Analytics HR Analytics Operations Research Consumer Behaviour Corporate Strategy Business Communication B B- B B C+ Strategy Consulting HR Analytics People Analytics unknown"
+    },
+    {
+      "student_id": "S017",
+      "text": "Aman Saxena FPM Term 6 CGPA 6.24 Attendance 80.74 Forecasting Time Series Business Statistics Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting Marketing Analytics Corporate Finance Supply Chain Strategy Business Statistics Operations Research C C+ C+ C+ C+ Forecasting Retail Demand Using Time Series Models Forecasting Time Series Business Statistics Marketing Analytics SQL Tableau Corporate Finance Modeling Strategy Consulting project-linked"
+    },
+    {
+      "student_id": "S018",
+      "text": "Riya Bose PGDM Term 4 CGPA 9.38 Attendance 84.78 HR Analytics People Analytics Corporate Finance Modeling Corporate Finance Business Statistics HR Analytics Operations Research Business Communication A A+ A+ A+ A+ Attrition Root-Cause Study for a Manufacturing Client HR Analytics People Analytics Corporate Finance Modeling project-linked"
+    },
+    {
+      "student_id": "S019",
+      "text": "Nikhil Khan PGDM Term 3 CGPA 7.33 Attendance 81.18 Marketing Analytics SQL Tableau Strategy Consulting Marketing Analytics Supply Chain Strategy Business Statistics Operations Research Business Communication B- B B+ B B Marketing Analytics SQL Tableau Strategy Consulting unknown"
+    },
+    {
+      "student_id": "S020",
+      "text": "Tanvi Sharma PGDM-HRM Term 1 CGPA 9.01 Attendance 86.48 Corporate Finance Modeling Strategy Consulting Corporate Finance Supply Chain Strategy Operations Research Consumer Behaviour Corporate Strategy A+ A+ A+ A A Corporate Finance Modeling Strategy Consulting unknown"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "total_students": 20,
+  "average_cgpa": 8.0,
+  "median_cgpa": 8.11,
+  "cgpa_distribution": {
+    "0-4": 0,
+    "4-6": 0,
+    "6-7": 4,
+    "7-8": 6,
+    "8-9": 5,
+    "9-10": 5
+  },
+  "attendance_statistics": {
+    "average": 86.11,
+    "median": 86.7,
+    "min": 71.0,
+    "max": 100.0
+  },
+  "placement_statistics": {
+    "project_linked_students": 9,
+    "unknown_students": 11,
+    "placement_data_available": false
+  },
+  "program_counts": {
+    "PGDM-HRM": 4,
+    "PGDM-GM": 5,
+    "PGDM": 10,
+    "FPM": 1
+  },
+  "grade_distribution": {
+    "8.0+": 10,
+    "7.0-7.99": 6,
+    "<7.0": 4
+  },
+  "course_analytics": [
+    {
+      "course_id": "C01",
+      "course_name": "Marketing Analytics",
+      "students": 10,
+      "average_attendance": 83.56,
+      "average_marks_100": 76.64
+    },
+    {
+      "course_id": "C02",
+      "course_name": "Corporate Finance",
+      "students": 10,
+      "average_attendance": 90.46,
+      "average_marks_100": 80.46
+    },
+    {
+      "course_id": "C03",
+      "course_name": "Supply Chain Strategy",
+      "students": 10,
+      "average_attendance": 84.06,
+      "average_marks_100": 78.89
+    },
+    {
+      "course_id": "C04",
+      "course_name": "Organizational Behaviour",
+      "students": 10,
+      "average_attendance": 88.16,
+      "average_marks_100": 84.04
+    },
+    {
+      "course_id": "C05",
+      "course_name": "Business Statistics",
+      "students": 10,
+      "average_attendance": 86.98,
+      "average_marks_100": 78.32
+    },
+    {
+      "course_id": "C06",
+      "course_name": "HR Analytics",
+      "students": 10,
+      "average_attendance": 88.83,
+      "average_marks_100": 84.46
+    },
+    {
+      "course_id": "C07",
+      "course_name": "Operations Research",
+      "students": 10,
+      "average_attendance": 81.98,
+      "average_marks_100": 79.74
+    },
+    {
+      "course_id": "C08",
+      "course_name": "Consumer Behaviour",
+      "students": 10,
+      "average_attendance": 88.48,
+      "average_marks_100": 82.14
+    },
+    {
+      "course_id": "C09",
+      "course_name": "Corporate Strategy",
+      "students": 10,
+      "average_attendance": 84.41,
+      "average_marks_100": 78.2
+    },
+    {
+      "course_id": "C10",
+      "course_name": "Business Communication",
+      "students": 10,
+      "average_attendance": 84.16,
+      "average_marks_100": 77.35
+    }
+  ],
+  "project_analytics": [
+    {
+      "title": "Forecasting Retail Demand Using Time Series Models",
+      "course": "Business Statistics (C05)",
+      "group": 1,
+      "member_count": 5
+    },
+    {
+      "title": "Attrition Root-Cause Study for a Manufacturing Client",
+      "course": "HR Analytics (C06)",
+      "group": 1,
+      "member_count": 5
+    }
+  ],
+  "top_courses": [
+    {
+      "label": "Organizational Behaviour",
+      "count": 10
+    },
+    {
+      "label": "Business Statistics",
+      "count": 10
+    },
+    {
+      "label": "HR Analytics",
+      "count": 10
+    },
+    {
+      "label": "Consumer Behaviour",
+      "count": 10
+    },
+    {
+      "label": "Business Communication",
+      "count": 10
+    },
+    {
+      "label": "Marketing Analytics",
+      "count": 10
+    },
+    {
+      "label": "Operations Research",
+      "count": 10
+    },
+    {
+      "label": "Corporate Finance",
+      "count": 10
+    }
+  ],
+  "project_topic_counts": [
+    {
+      "label": "Forecasting",
+      "count": 5
+    },
+    {
+      "label": "Time Series",
+      "count": 5
+    },
+    {
+      "label": "Business Statistics",
+      "count": 5
+    },
+    {
+      "label": "HR Analytics",
+      "count": 5
+    },
+    {
+      "label": "People Analytics",
+      "count": 5
+    }
+  ]
+}

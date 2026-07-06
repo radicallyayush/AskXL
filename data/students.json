@@ -1,0 +1,6103 @@
+{
+  "students": [
+    {
+      "student_id": "S001",
+      "name": "Ananya Rao",
+      "program": "PGDM-HRM",
+      "term": 1,
+      "email": "",
+      "cgpa": 9.23,
+      "attendance": {
+        "overall_pct": 90.0,
+        "by_course": [
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 29,
+            "classes_attended": 27,
+            "attendance_pct": 93.1
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 30,
+            "classes_attended": 28,
+            "attendance_pct": 93.3
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 36,
+            "classes_attended": 32,
+            "attendance_pct": 88.9
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 36,
+            "classes_attended": 30,
+            "attendance_pct": 83.3
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 35,
+            "classes_attended": 32,
+            "attendance_pct": 91.4
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 93.1,
+          "grade": "A+",
+          "marks_100": 90.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.3
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 93.3,
+          "grade": "A+",
+          "marks_100": 91.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 88.9,
+          "grade": "A+",
+          "marks_100": 91.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.7
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 83.3,
+          "grade": "A+",
+          "marks_100": 93.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 39.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 91.4,
+          "grade": "A+",
+          "marks_100": 95.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 39.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.7
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 90.4,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 91.4,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 91.0,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 93.1,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 95.6,
+          "letter_grade": "A+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C05_group1_forecasting_retail_demand_using_time_ser.md",
+          "title": "Forecasting Retail Demand Using Time Series Models",
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Inventory swings between stockouts and overstock have made the client's planning team question its current forecasting approach. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in Business Statistics. ## Scope & Approach 1. Assemble and clean historical demand data 2. Compare forecasting models (moving average, exponential smoothing, ARIMA) 3. Validate forecast accuracy against a held-out period 4. Recommend a model and a review cadence ## Deliverables - Final written report (10-12 pages, excluding",
+          "members": [
+            {
+              "name": "Meera Das",
+              "student_id": "S008"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            },
+            {
+              "name": "Ananya Rao",
+              "student_id": "S001"
+            },
+            {
+              "name": "Aman Saxena",
+              "student_id": "S017"
+            },
+            {
+              "name": "Neha Reddy",
+              "student_id": "S014"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "Forecasting",
+        "Time Series",
+        "Business Statistics",
+        "HR Analytics",
+        "People Analytics"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 92.3,
+        "attendance_flags": [],
+        "project_topics": [
+          "Forecasting",
+          "Time Series",
+          "Business Statistics",
+          "HR Analytics",
+          "People Analytics"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S002",
+      "name": "Rohan Mehta",
+      "program": "PGDM-GM",
+      "term": 2,
+      "email": "",
+      "cgpa": 8.51,
+      "attendance": {
+        "overall_pct": 81.56,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 28,
+            "classes_attended": 24,
+            "attendance_pct": 85.7
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 28,
+            "classes_attended": 27,
+            "attendance_pct": 96.4
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 30,
+            "classes_attended": 22,
+            "attendance_pct": 73.3
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 31,
+            "classes_attended": 24,
+            "attendance_pct": 77.4
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 36,
+            "classes_attended": 27,
+            "attendance_pct": 75.0
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 85.7,
+          "grade": "A-",
+          "marks_100": 80.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 31.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.5
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 96.4,
+          "grade": "A",
+          "marks_100": 85.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.6
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 73.3,
+          "grade": "A",
+          "marks_100": 87.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.2
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 77.4,
+          "grade": "A",
+          "marks_100": 85.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.9
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 75.0,
+          "grade": "A",
+          "marks_100": 86.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.5
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 80.5,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 85.8,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 87.4,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 85.4,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 86.6,
+          "letter_grade": "A"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "HR Analytics",
+        "People Analytics"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 85.14,
+        "attendance_flags": [
+          "C05",
+          "C06",
+          "C07"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "HR Analytics",
+          "People Analytics"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S003",
+      "name": "Fatima Sheikh",
+      "program": "PGDM",
+      "term": 6,
+      "email": "",
+      "cgpa": 7.09,
+      "attendance": {
+        "overall_pct": 83.6,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 36,
+            "classes_attended": 32,
+            "attendance_pct": 88.9
+          },
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 29,
+            "classes_attended": 27,
+            "attendance_pct": 93.1
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 31,
+            "classes_attended": 22,
+            "attendance_pct": 71.0
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 36,
+            "classes_attended": 33,
+            "attendance_pct": 91.7
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 30,
+            "classes_attended": 22,
+            "attendance_pct": 73.3
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 88.9,
+          "grade": "B",
+          "marks_100": 73.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 93.1,
+          "grade": "B-",
+          "marks_100": 69.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 71.0,
+          "grade": "B",
+          "marks_100": 71.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 29.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.7
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 91.7,
+          "grade": "B",
+          "marks_100": 70.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.0
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 73.3,
+          "grade": "B-",
+          "marks_100": 69.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 73.7,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 69.6,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 71.2,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 70.2,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 69.6,
+          "letter_grade": "B-"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 70.86,
+        "attendance_flags": [
+          "C03",
+          "C10"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S004",
+      "name": "Karan Verma",
+      "program": "PGDM",
+      "term": 6,
+      "email": "",
+      "cgpa": 7.15,
+      "attendance": {
+        "overall_pct": 92.6,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 34,
+            "classes_attended": 32,
+            "attendance_pct": 94.1
+          },
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 32,
+            "classes_attended": 31,
+            "attendance_pct": 96.9
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 32,
+            "classes_attended": 29,
+            "attendance_pct": 90.6
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 31,
+            "classes_attended": 29,
+            "attendance_pct": 93.5
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 33,
+            "classes_attended": 29,
+            "attendance_pct": 87.9
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 94.1,
+          "grade": "B-",
+          "marks_100": 69.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 29.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 96.9,
+          "grade": "B",
+          "marks_100": 72.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 29.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 90.6,
+          "grade": "B",
+          "marks_100": 71.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 29.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.6
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 93.5,
+          "grade": "B-",
+          "marks_100": 68.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 25.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.6
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 87.9,
+          "grade": "B",
+          "marks_100": 74.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 31.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.7
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 69.8,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 72.9,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 71.7,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 68.5,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 74.4,
+          "letter_grade": "B"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C06_group1_attrition_root_cause_study_for_a_manufac.md",
+          "title": "Attrition Root-Cause Study for a Manufacturing Client",
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Voluntary attrition has crept up over three consecutive quarters, and leadership wants a data-backed explanation before the next review cycle. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in HR Analytics. ## Scope & Approach 1. Combine HRIS, survey, and exit-interview data 2. Test candidate drivers of attrition statistically 3. Rank drivers by impact and actionability 4. Propose targeted retention interventions ## Deliverables - Final written report (10-12 pages, excluding annexures) - 15-minute",
+          "members": [
+            {
+              "name": "Riya Bose",
+              "student_id": "S018"
+            },
+            {
+              "name": "Karan Verma",
+              "student_id": "S004"
+            },
+            {
+              "name": "Ishaan Nair",
+              "student_id": "S005"
+            },
+            {
+              "name": "Siddharth Joshi",
+              "student_id": "S015"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "HR Analytics",
+        "People Analytics",
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 71.46,
+        "attendance_flags": [],
+        "project_topics": [
+          "HR Analytics",
+          "People Analytics",
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S005",
+      "name": "Ishaan Nair",
+      "program": "PGDM-GM",
+      "term": 1,
+      "email": "",
+      "cgpa": 9.42,
+      "attendance": {
+        "overall_pct": 89.08,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 36,
+            "classes_attended": 28,
+            "attendance_pct": 77.8
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 33,
+            "classes_attended": 31,
+            "attendance_pct": 93.9
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 29,
+            "classes_attended": 27,
+            "attendance_pct": 93.1
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 30,
+            "classes_attended": 30,
+            "attendance_pct": 100.0
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 31,
+            "classes_attended": 25,
+            "attendance_pct": 80.6
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 77.8,
+          "grade": "A+",
+          "marks_100": 94.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 40.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.9
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 93.9,
+          "grade": "A+",
+          "marks_100": 96.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 38.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 15.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.1
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 93.1,
+          "grade": "A+",
+          "marks_100": 94.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 40.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.3
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 100.0,
+          "grade": "A+",
+          "marks_100": 92.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 20.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.8
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 80.6,
+          "grade": "A+",
+          "marks_100": 92.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.1
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 94.5,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 96.2,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 94.7,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 92.9,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 92.7,
+          "letter_grade": "A+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C06_group1_attrition_root_cause_study_for_a_manufac.md",
+          "title": "Attrition Root-Cause Study for a Manufacturing Client",
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Voluntary attrition has crept up over three consecutive quarters, and leadership wants a data-backed explanation before the next review cycle. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in HR Analytics. ## Scope & Approach 1. Combine HRIS, survey, and exit-interview data 2. Test candidate drivers of attrition statistically 3. Rank drivers by impact and actionability 4. Propose targeted retention interventions ## Deliverables - Final written report (10-12 pages, excluding annexures) - 15-minute",
+          "members": [
+            {
+              "name": "Riya Bose",
+              "student_id": "S018"
+            },
+            {
+              "name": "Karan Verma",
+              "student_id": "S004"
+            },
+            {
+              "name": "Ishaan Nair",
+              "student_id": "S005"
+            },
+            {
+              "name": "Siddharth Joshi",
+              "student_id": "S015"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "HR Analytics",
+        "People Analytics",
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 94.2,
+        "attendance_flags": [
+          "C02"
+        ],
+        "project_topics": [
+          "HR Analytics",
+          "People Analytics",
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S006",
+      "name": "Priya Iyer",
+      "program": "PGDM-HRM",
+      "term": 1,
+      "email": "",
+      "cgpa": 8.42,
+      "attendance": {
+        "overall_pct": 90.6,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 29,
+            "classes_attended": 25,
+            "attendance_pct": 86.2
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 35,
+            "classes_attended": 30,
+            "attendance_pct": 85.7
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 30,
+            "classes_attended": 26,
+            "attendance_pct": 86.7
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 36,
+            "classes_attended": 34,
+            "attendance_pct": 94.4
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 30,
+            "classes_attended": 30,
+            "attendance_pct": 100.0
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 86.2,
+          "grade": "A-",
+          "marks_100": 84.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.5
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 85.7,
+          "grade": "A-",
+          "marks_100": 82.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.6
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 86.7,
+          "grade": "A",
+          "marks_100": 85.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.4
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 94.4,
+          "grade": "A-",
+          "marks_100": 84.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.1
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 100.0,
+          "grade": "A-",
+          "marks_100": 84.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 84.2,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 82.0,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 85.9,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 84.1,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 84.8,
+          "letter_grade": "A-"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Strategy",
+        "Consulting",
+        "HR Analytics",
+        "People Analytics"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 84.2,
+        "attendance_flags": [],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Strategy",
+          "Consulting",
+          "HR Analytics",
+          "People Analytics"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S007",
+      "name": "Aditya Kapoor",
+      "program": "PGDM",
+      "term": 2,
+      "email": "",
+      "cgpa": 7.89,
+      "attendance": {
+        "overall_pct": 87.14,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 35,
+            "classes_attended": 35,
+            "attendance_pct": 100.0
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 33,
+            "classes_attended": 28,
+            "attendance_pct": 84.8
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 32,
+            "classes_attended": 29,
+            "attendance_pct": 90.6
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 29,
+            "classes_attended": 22,
+            "attendance_pct": 75.9
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 32,
+            "classes_attended": 27,
+            "attendance_pct": 84.4
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 100.0,
+          "grade": "B+",
+          "marks_100": 79.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.4
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 84.8,
+          "grade": "A-",
+          "marks_100": 80.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.6
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.7
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 90.6,
+          "grade": "B+",
+          "marks_100": 78.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.2
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 75.9,
+          "grade": "B+",
+          "marks_100": 77.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.3
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 84.4,
+          "grade": "B+",
+          "marks_100": 79.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.2
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 79.8,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 80.4,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 78.1,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 77.1,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 79.1,
+          "letter_grade": "B+"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 78.9,
+        "attendance_flags": [
+          "C09"
+        ],
+        "project_topics": [
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S008",
+      "name": "Meera Das",
+      "program": "PGDM",
+      "term": 5,
+      "email": "",
+      "cgpa": 7.95,
+      "attendance": {
+        "overall_pct": 86.44,
+        "by_course": [
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 32,
+            "classes_attended": 28,
+            "attendance_pct": 87.5
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 36,
+            "classes_attended": 27,
+            "attendance_pct": 75.0
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 34,
+            "classes_attended": 28,
+            "attendance_pct": 82.4
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 33,
+            "classes_attended": 30,
+            "attendance_pct": 90.9
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 28,
+            "classes_attended": 27,
+            "attendance_pct": 96.4
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 87.5,
+          "grade": "B+",
+          "marks_100": 77.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 75.0,
+          "grade": "A-",
+          "marks_100": 81.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.2
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 82.4,
+          "grade": "B+",
+          "marks_100": 76.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.5
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 90.9,
+          "grade": "A-",
+          "marks_100": 82.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.3
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 96.4,
+          "grade": "B+",
+          "marks_100": 79.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.8
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 77.3,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 81.2,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 76.9,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 82.8,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 79.3,
+          "letter_grade": "B+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C05_group1_forecasting_retail_demand_using_time_ser.md",
+          "title": "Forecasting Retail Demand Using Time Series Models",
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Inventory swings between stockouts and overstock have made the client's planning team question its current forecasting approach. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in Business Statistics. ## Scope & Approach 1. Assemble and clean historical demand data 2. Compare forecasting models (moving average, exponential smoothing, ARIMA) 3. Validate forecast accuracy against a held-out period 4. Recommend a model and a review cadence ## Deliverables - Final written report (10-12 pages, excluding",
+          "members": [
+            {
+              "name": "Meera Das",
+              "student_id": "S008"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            },
+            {
+              "name": "Ananya Rao",
+              "student_id": "S001"
+            },
+            {
+              "name": "Aman Saxena",
+              "student_id": "S017"
+            },
+            {
+              "name": "Neha Reddy",
+              "student_id": "S014"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "Forecasting",
+        "Time Series",
+        "Business Statistics",
+        "Strategy",
+        "Consulting",
+        "HR Analytics",
+        "People Analytics"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 79.5,
+        "attendance_flags": [
+          "C04"
+        ],
+        "project_topics": [
+          "Forecasting",
+          "Time Series",
+          "Business Statistics",
+          "Strategy",
+          "Consulting",
+          "HR Analytics",
+          "People Analytics"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S009",
+      "name": "Vikram Bhattacharya",
+      "program": "PGDM",
+      "term": 2,
+      "email": "",
+      "cgpa": 8.8,
+      "attendance": {
+        "overall_pct": 82.08,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 35,
+            "classes_attended": 26,
+            "attendance_pct": 74.3
+          },
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 33,
+            "classes_attended": 31,
+            "attendance_pct": 93.9
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 34,
+            "classes_attended": 26,
+            "attendance_pct": 76.5
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 34,
+            "classes_attended": 28,
+            "attendance_pct": 82.4
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 36,
+            "classes_attended": 30,
+            "attendance_pct": 83.3
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 74.3,
+          "grade": "A",
+          "marks_100": 86.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.6
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.3
+            }
+          ]
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 93.9,
+          "grade": "A+",
+          "marks_100": 93.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 37.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.5
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 76.5,
+          "grade": "A-",
+          "marks_100": 84.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.8
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 82.4,
+          "grade": "A",
+          "marks_100": 88.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.1
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 83.3,
+          "grade": "A",
+          "marks_100": 87.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.8
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 86.8,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 93.5,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 84.2,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 88.2,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 87.1,
+          "letter_grade": "A"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Corporate Finance",
+        "Modeling"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 87.96,
+        "attendance_flags": [
+          "C01",
+          "C07"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Corporate Finance",
+          "Modeling"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S010",
+      "name": "Sneha Menon",
+      "program": "PGDM-GM",
+      "term": 6,
+      "email": "",
+      "cgpa": 8.59,
+      "attendance": {
+        "overall_pct": 85.32,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 35,
+            "classes_attended": 30,
+            "attendance_pct": 85.7
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 33,
+            "classes_attended": 30,
+            "attendance_pct": 90.9
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 35,
+            "classes_attended": 25,
+            "attendance_pct": 71.4
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 28,
+            "classes_attended": 22,
+            "attendance_pct": 78.6
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 33,
+            "classes_attended": 33,
+            "attendance_pct": 100.0
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 85.7,
+          "grade": "A",
+          "marks_100": 87.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.7
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 90.9,
+          "grade": "A",
+          "marks_100": 85.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 71.4,
+          "grade": "A",
+          "marks_100": 86.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.7
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 78.6,
+          "grade": "A-",
+          "marks_100": 84.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.3
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 100.0,
+          "grade": "A",
+          "marks_100": 86.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.2
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 87.1,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 85.4,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 86.9,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 84.0,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 86.1,
+          "letter_grade": "A"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 85.9,
+        "attendance_flags": [
+          "C04",
+          "C07"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S011",
+      "name": "Arjun Chandra",
+      "program": "PGDM",
+      "term": 2,
+      "email": "",
+      "cgpa": 6.38,
+      "attendance": {
+        "overall_pct": 86.64,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 29,
+            "classes_attended": 29,
+            "attendance_pct": 100.0
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 31,
+            "classes_attended": 25,
+            "attendance_pct": 80.6
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 28,
+            "classes_attended": 20,
+            "attendance_pct": 71.4
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 30,
+            "classes_attended": 28,
+            "attendance_pct": 93.3
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 33,
+            "classes_attended": 29,
+            "attendance_pct": 87.9
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 100.0,
+          "grade": "C+",
+          "marks_100": 62.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 8.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 11.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 5.7
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 80.6,
+          "grade": "B-",
+          "marks_100": 65.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.2
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 71.4,
+          "grade": "C+",
+          "marks_100": 61.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 23.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.3
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 93.3,
+          "grade": "B-",
+          "marks_100": 65.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.5
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 87.9,
+          "grade": "C+",
+          "marks_100": 63.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 25.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 8.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.0
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 62.7,
+          "letter_grade": "C+"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 65.6,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 61.3,
+          "letter_grade": "C+"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 65.7,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 63.8,
+          "letter_grade": "C+"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 63.82,
+        "attendance_flags": [
+          "C08"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S012",
+      "name": "Divya Ghosh",
+      "program": "PGDM",
+      "term": 3,
+      "email": "",
+      "cgpa": 7.27,
+      "attendance": {
+        "overall_pct": 89.68,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 31,
+            "classes_attended": 30,
+            "attendance_pct": 96.8
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 28,
+            "classes_attended": 27,
+            "attendance_pct": 96.4
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 28,
+            "classes_attended": 24,
+            "attendance_pct": 85.7
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 29,
+            "classes_attended": 24,
+            "attendance_pct": 82.8
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 30,
+            "classes_attended": 26,
+            "attendance_pct": 86.7
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 96.8,
+          "grade": "B-",
+          "marks_100": 68.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.4
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 96.4,
+          "grade": "B+",
+          "marks_100": 75.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.6
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 85.7,
+          "grade": "B",
+          "marks_100": 72.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.5
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 82.8,
+          "grade": "B",
+          "marks_100": 73.1,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.7
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 86.7,
+          "grade": "B",
+          "marks_100": 73.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.0
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 68.4,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 75.8,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 72.7,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 73.1,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 73.3,
+          "letter_grade": "B"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 72.66,
+        "attendance_flags": [],
+        "project_topics": [
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S013",
+      "name": "Rahul Malhotra",
+      "program": "PGDM-GM",
+      "term": 1,
+      "email": "",
+      "cgpa": 6.91,
+      "attendance": {
+        "overall_pct": 91.82,
+        "by_course": [
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 35,
+            "classes_attended": 27,
+            "attendance_pct": 77.1
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 34,
+            "classes_attended": 32,
+            "attendance_pct": 94.1
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 33,
+            "classes_attended": 33,
+            "attendance_pct": 100.0
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 33,
+            "classes_attended": 29,
+            "attendance_pct": 87.9
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 30,
+            "classes_attended": 30,
+            "attendance_pct": 100.0
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 77.1,
+          "grade": "B-",
+          "marks_100": 69.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 28.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.6
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 94.1,
+          "grade": "B",
+          "marks_100": 71.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.5
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 100.0,
+          "grade": "B-",
+          "marks_100": 67.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 25.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.1
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 87.9,
+          "grade": "B",
+          "marks_100": 72.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.2
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 100.0,
+          "grade": "B-",
+          "marks_100": 65.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 25.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 69.3,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 71.4,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 67.4,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 72.0,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 65.6,
+          "letter_grade": "B-"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C05_group1_forecasting_retail_demand_using_time_ser.md",
+          "title": "Forecasting Retail Demand Using Time Series Models",
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Inventory swings between stockouts and overstock have made the client's planning team question its current forecasting approach. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in Business Statistics. ## Scope & Approach 1. Assemble and clean historical demand data 2. Compare forecasting models (moving average, exponential smoothing, ARIMA) 3. Validate forecast accuracy against a held-out period 4. Recommend a model and a review cadence ## Deliverables - Final written report (10-12 pages, excluding",
+          "members": [
+            {
+              "name": "Meera Das",
+              "student_id": "S008"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            },
+            {
+              "name": "Ananya Rao",
+              "student_id": "S001"
+            },
+            {
+              "name": "Aman Saxena",
+              "student_id": "S017"
+            },
+            {
+              "name": "Neha Reddy",
+              "student_id": "S014"
+            }
+          ]
+        },
+        {
+          "file": "C06_group1_attrition_root_cause_study_for_a_manufac.md",
+          "title": "Attrition Root-Cause Study for a Manufacturing Client",
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Voluntary attrition has crept up over three consecutive quarters, and leadership wants a data-backed explanation before the next review cycle. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in HR Analytics. ## Scope & Approach 1. Combine HRIS, survey, and exit-interview data 2. Test candidate drivers of attrition statistically 3. Rank drivers by impact and actionability 4. Propose targeted retention interventions ## Deliverables - Final written report (10-12 pages, excluding annexures) - 15-minute",
+          "members": [
+            {
+              "name": "Riya Bose",
+              "student_id": "S018"
+            },
+            {
+              "name": "Karan Verma",
+              "student_id": "S004"
+            },
+            {
+              "name": "Ishaan Nair",
+              "student_id": "S005"
+            },
+            {
+              "name": "Siddharth Joshi",
+              "student_id": "S015"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "Forecasting",
+        "Time Series",
+        "Business Statistics",
+        "HR Analytics",
+        "People Analytics",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 2,
+        "average_marks_100": 69.14,
+        "attendance_flags": [
+          "C03"
+        ],
+        "project_topics": [
+          "Forecasting",
+          "Time Series",
+          "Business Statistics",
+          "HR Analytics",
+          "People Analytics",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S014",
+      "name": "Neha Reddy",
+      "program": "PGDM-GM",
+      "term": 2,
+      "email": "",
+      "cgpa": 8.26,
+      "attendance": {
+        "overall_pct": 85.56,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 33,
+            "classes_attended": 29,
+            "attendance_pct": 87.9
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 34,
+            "classes_attended": 25,
+            "attendance_pct": 73.5
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 35,
+            "classes_attended": 34,
+            "attendance_pct": 97.1
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 35,
+            "classes_attended": 33,
+            "attendance_pct": 94.3
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 32,
+            "classes_attended": 24,
+            "attendance_pct": 75.0
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 87.9,
+          "grade": "A-",
+          "marks_100": 81.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.8
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.8
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 73.5,
+          "grade": "A-",
+          "marks_100": 83.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 97.1,
+          "grade": "A-",
+          "marks_100": 82.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.6
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 94.3,
+          "grade": "A-",
+          "marks_100": 81.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 32.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 75.0,
+          "grade": "A-",
+          "marks_100": 84.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 33.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 16.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.9
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 81.7,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 83.5,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 82.0,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 81.3,
+          "letter_grade": "A-"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 84.7,
+          "letter_grade": "A-"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C05_group1_forecasting_retail_demand_using_time_ser.md",
+          "title": "Forecasting Retail Demand Using Time Series Models",
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Inventory swings between stockouts and overstock have made the client's planning team question its current forecasting approach. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in Business Statistics. ## Scope & Approach 1. Assemble and clean historical demand data 2. Compare forecasting models (moving average, exponential smoothing, ARIMA) 3. Validate forecast accuracy against a held-out period 4. Recommend a model and a review cadence ## Deliverables - Final written report (10-12 pages, excluding",
+          "members": [
+            {
+              "name": "Meera Das",
+              "student_id": "S008"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            },
+            {
+              "name": "Ananya Rao",
+              "student_id": "S001"
+            },
+            {
+              "name": "Aman Saxena",
+              "student_id": "S017"
+            },
+            {
+              "name": "Neha Reddy",
+              "student_id": "S014"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "Forecasting",
+        "Time Series",
+        "Business Statistics",
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 82.64,
+        "attendance_flags": [
+          "C03",
+          "C07"
+        ],
+        "project_topics": [
+          "Forecasting",
+          "Time Series",
+          "Business Statistics",
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S015",
+      "name": "Siddharth Joshi",
+      "program": "PGDM-HRM",
+      "term": 3,
+      "email": "",
+      "cgpa": 9.28,
+      "attendance": {
+        "overall_pct": 82.74,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 28,
+            "classes_attended": 21,
+            "attendance_pct": 75.0
+          },
+          {
+            "course_id": "C04",
+            "course_name": "Organizational Behaviour",
+            "classes_held": 30,
+            "classes_attended": 27,
+            "attendance_pct": 90.0
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 34,
+            "classes_attended": 31,
+            "attendance_pct": 91.2
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 32,
+            "classes_attended": 25,
+            "attendance_pct": 78.1
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 34,
+            "classes_attended": 27,
+            "attendance_pct": 79.4
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 75.0,
+          "grade": "A+",
+          "marks_100": 91.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 10.0
+            }
+          ]
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "instructor": "Prof. N. Kapoor",
+          "credits": 2,
+          "attendance_pct": 90.0,
+          "grade": "A+",
+          "marks_100": 93.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.2
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 91.2,
+          "grade": "A+",
+          "marks_100": 94.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 37.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 15.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.3
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 78.1,
+          "grade": "A+",
+          "marks_100": 92.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 20.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.5
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 79.4,
+          "grade": "A+",
+          "marks_100": 91.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 91.9,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C04",
+          "course_name": "Organizational Behaviour",
+          "total_marks_100": 93.3,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 94.8,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 92.7,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 91.2,
+          "letter_grade": "A+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C06_group1_attrition_root_cause_study_for_a_manufac.md",
+          "title": "Attrition Root-Cause Study for a Manufacturing Client",
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Voluntary attrition has crept up over three consecutive quarters, and leadership wants a data-backed explanation before the next review cycle. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in HR Analytics. ## Scope & Approach 1. Combine HRIS, survey, and exit-interview data 2. Test candidate drivers of attrition statistically 3. Rank drivers by impact and actionability 4. Propose targeted retention interventions ## Deliverables - Final written report (10-12 pages, excluding annexures) - 15-minute",
+          "members": [
+            {
+              "name": "Riya Bose",
+              "student_id": "S018"
+            },
+            {
+              "name": "Karan Verma",
+              "student_id": "S004"
+            },
+            {
+              "name": "Ishaan Nair",
+              "student_id": "S005"
+            },
+            {
+              "name": "Siddharth Joshi",
+              "student_id": "S015"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "HR Analytics",
+        "People Analytics",
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 92.78,
+        "attendance_flags": [
+          "C01",
+          "C08",
+          "C09"
+        ],
+        "project_topics": [
+          "HR Analytics",
+          "People Analytics",
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S016",
+      "name": "Kavya Pillai",
+      "program": "PGDM",
+      "term": 2,
+      "email": "",
+      "cgpa": 6.94,
+      "attendance": {
+        "overall_pct": 84.12,
+        "by_course": [
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 36,
+            "classes_attended": 29,
+            "attendance_pct": 80.6
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 28,
+            "classes_attended": 26,
+            "attendance_pct": 92.9
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 35,
+            "classes_attended": 33,
+            "attendance_pct": 94.3
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 32,
+            "classes_attended": 24,
+            "attendance_pct": 75.0
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 36,
+            "classes_attended": 28,
+            "attendance_pct": 77.8
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 80.6,
+          "grade": "B",
+          "marks_100": 72.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 30.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.4
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 92.9,
+          "grade": "B-",
+          "marks_100": 68.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.9
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.9
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 94.3,
+          "grade": "B",
+          "marks_100": 70.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 29.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.4
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 75.0,
+          "grade": "B",
+          "marks_100": 70.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 28.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.6
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.4
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 77.8,
+          "grade": "C+",
+          "marks_100": 64.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 24.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.7
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 72.4,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 68.9,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 70.9,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 70.2,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 64.6,
+          "letter_grade": "C+"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Strategy",
+        "Consulting",
+        "HR Analytics",
+        "People Analytics"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 69.4,
+        "attendance_flags": [
+          "C09",
+          "C10"
+        ],
+        "project_topics": [
+          "Strategy",
+          "Consulting",
+          "HR Analytics",
+          "People Analytics"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S017",
+      "name": "Aman Saxena",
+      "program": "FPM",
+      "term": 6,
+      "email": "",
+      "cgpa": 6.24,
+      "attendance": {
+        "overall_pct": 80.74,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 34,
+            "classes_attended": 25,
+            "attendance_pct": 73.5
+          },
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 35,
+            "classes_attended": 32,
+            "attendance_pct": 91.4
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 31,
+            "classes_attended": 24,
+            "attendance_pct": 77.4
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 30,
+            "classes_attended": 25,
+            "attendance_pct": 83.3
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 32,
+            "classes_attended": 25,
+            "attendance_pct": 78.1
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 73.5,
+          "grade": "C",
+          "marks_100": 59.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 24.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.0
+            }
+          ]
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 91.4,
+          "grade": "C+",
+          "marks_100": 63.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 26.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 8.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 5.6
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 77.4,
+          "grade": "C+",
+          "marks_100": 62.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 25.5
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 8.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 8.7
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.8
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 83.3,
+          "grade": "C+",
+          "marks_100": 61.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 24.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 8.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 11.2
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 6.8
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 78.1,
+          "grade": "C+",
+          "marks_100": 64.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 9.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 12.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 5.6
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 59.8,
+          "letter_grade": "C"
+        },
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 63.7,
+          "letter_grade": "C+"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 62.5,
+          "letter_grade": "C+"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 61.3,
+          "letter_grade": "C+"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 64.6,
+          "letter_grade": "C+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C05_group1_forecasting_retail_demand_using_time_ser.md",
+          "title": "Forecasting Retail Demand Using Time Series Models",
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Inventory swings between stockouts and overstock have made the client's planning team question its current forecasting approach. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in Business Statistics. ## Scope & Approach 1. Assemble and clean historical demand data 2. Compare forecasting models (moving average, exponential smoothing, ARIMA) 3. Validate forecast accuracy against a held-out period 4. Recommend a model and a review cadence ## Deliverables - Final written report (10-12 pages, excluding",
+          "members": [
+            {
+              "name": "Meera Das",
+              "student_id": "S008"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            },
+            {
+              "name": "Ananya Rao",
+              "student_id": "S001"
+            },
+            {
+              "name": "Aman Saxena",
+              "student_id": "S017"
+            },
+            {
+              "name": "Neha Reddy",
+              "student_id": "S014"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "Forecasting",
+        "Time Series",
+        "Business Statistics",
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 62.38,
+        "attendance_flags": [
+          "C01",
+          "C03",
+          "C07"
+        ],
+        "project_topics": [
+          "Forecasting",
+          "Time Series",
+          "Business Statistics",
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S018",
+      "name": "Riya Bose",
+      "program": "PGDM",
+      "term": 4,
+      "email": "",
+      "cgpa": 9.38,
+      "attendance": {
+        "overall_pct": 84.78,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 33,
+            "classes_attended": 30,
+            "attendance_pct": 90.9
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 36,
+            "classes_attended": 29,
+            "attendance_pct": 80.6
+          },
+          {
+            "course_id": "C06",
+            "course_name": "HR Analytics",
+            "classes_held": 34,
+            "classes_attended": 32,
+            "attendance_pct": 94.1
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 36,
+            "classes_attended": 26,
+            "attendance_pct": 72.2
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 36,
+            "classes_attended": 31,
+            "attendance_pct": 86.1
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 90.9,
+          "grade": "A",
+          "marks_100": 89.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 35.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.6
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 80.6,
+          "grade": "A+",
+          "marks_100": 94.8,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 37.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 15.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.0
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.9
+            }
+          ]
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 2,
+          "attendance_pct": 94.1,
+          "grade": "A+",
+          "marks_100": 95.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 39.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.1
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.9
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 72.2,
+          "grade": "A+",
+          "marks_100": 95.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 39.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.0
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 10.0
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 86.1,
+          "grade": "A+",
+          "marks_100": 93.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 39.4
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 10.0
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 89.5,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 94.8,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "total_marks_100": 95.7,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 95.2,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 93.7,
+          "letter_grade": "A+"
+        }
+      ],
+      "projects": [
+        {
+          "file": "C06_group1_attrition_root_cause_study_for_a_manufac.md",
+          "title": "Attrition Root-Cause Study for a Manufacturing Client",
+          "course_id": "C06",
+          "course_name": "HR Analytics",
+          "group": 1,
+          "group_total": 2,
+          "summary": "Voluntary attrition has crept up over three consecutive quarters, and leadership wants a data-backed explanation before the next review cycle. ## Objective Develop a data-grounded recommendation the client can act on within one operating cycle, using the frameworks and tools covered in HR Analytics. ## Scope & Approach 1. Combine HRIS, survey, and exit-interview data 2. Test candidate drivers of attrition statistically 3. Rank drivers by impact and actionability 4. Propose targeted retention interventions ## Deliverables - Final written report (10-12 pages, excluding annexures) - 15-minute",
+          "members": [
+            {
+              "name": "Riya Bose",
+              "student_id": "S018"
+            },
+            {
+              "name": "Karan Verma",
+              "student_id": "S004"
+            },
+            {
+              "name": "Ishaan Nair",
+              "student_id": "S005"
+            },
+            {
+              "name": "Siddharth Joshi",
+              "student_id": "S015"
+            },
+            {
+              "name": "Rahul Malhotra",
+              "student_id": "S013"
+            }
+          ]
+        }
+      ],
+      "skills": [
+        "HR Analytics",
+        "People Analytics",
+        "Corporate Finance",
+        "Modeling"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 1,
+        "average_marks_100": 93.78,
+        "attendance_flags": [
+          "C07"
+        ],
+        "project_topics": [
+          "HR Analytics",
+          "People Analytics",
+          "Corporate Finance",
+          "Modeling"
+        ]
+      },
+      "placement_status": "project-linked"
+    },
+    {
+      "student_id": "S019",
+      "name": "Nikhil Khan",
+      "program": "PGDM",
+      "term": 3,
+      "email": "",
+      "cgpa": 7.33,
+      "attendance": {
+        "overall_pct": 81.18,
+        "by_course": [
+          {
+            "course_id": "C01",
+            "course_name": "Marketing Analytics",
+            "classes_held": 36,
+            "classes_attended": 26,
+            "attendance_pct": 72.2
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 34,
+            "classes_attended": 27,
+            "attendance_pct": 79.4
+          },
+          {
+            "course_id": "C05",
+            "course_name": "Business Statistics",
+            "classes_held": 36,
+            "classes_attended": 35,
+            "attendance_pct": 97.2
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 35,
+            "classes_attended": 26,
+            "attendance_pct": 74.3
+          },
+          {
+            "course_id": "C10",
+            "course_name": "Business Communication",
+            "classes_held": 29,
+            "classes_attended": 24,
+            "attendance_pct": 82.8
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "instructor": "Prof. R. Sinha",
+          "credits": 3,
+          "attendance_pct": 72.2,
+          "grade": "B-",
+          "marks_100": 69.9,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 9.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.6
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.4
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 79.4,
+          "grade": "B",
+          "marks_100": 74.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.7
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.4
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.0
+            }
+          ]
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "instructor": "Prof. M. Das",
+          "credits": 3,
+          "attendance_pct": 97.2,
+          "grade": "B+",
+          "marks_100": 76.7,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 31.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.9
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 13.9
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.6
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 74.3,
+          "grade": "B",
+          "marks_100": 73.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 27.1
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 11.1
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 11.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 15.8
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.6
+            }
+          ]
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "instructor": "Prof. V. Menon",
+          "credits": 2,
+          "attendance_pct": 82.8,
+          "grade": "B",
+          "marks_100": 72.3,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 28.6
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 10.4
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 10.9
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 14.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 7.8
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C01",
+          "course_name": "Marketing Analytics",
+          "total_marks_100": 69.9,
+          "letter_grade": "B-"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 74.3,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C05",
+          "course_name": "Business Statistics",
+          "total_marks_100": 76.7,
+          "letter_grade": "B+"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 73.4,
+          "letter_grade": "B"
+        },
+        {
+          "course_id": "C10",
+          "course_name": "Business Communication",
+          "total_marks_100": 72.3,
+          "letter_grade": "B"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Marketing Analytics",
+        "SQL",
+        "Tableau",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 73.32,
+        "attendance_flags": [
+          "C01",
+          "C03",
+          "C07"
+        ],
+        "project_topics": [
+          "Marketing Analytics",
+          "SQL",
+          "Tableau",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    },
+    {
+      "student_id": "S020",
+      "name": "Tanvi Sharma",
+      "program": "PGDM-HRM",
+      "term": 1,
+      "email": "",
+      "cgpa": 9.01,
+      "attendance": {
+        "overall_pct": 86.48,
+        "by_course": [
+          {
+            "course_id": "C02",
+            "course_name": "Corporate Finance",
+            "classes_held": 29,
+            "classes_attended": 22,
+            "attendance_pct": 75.9
+          },
+          {
+            "course_id": "C03",
+            "course_name": "Supply Chain Strategy",
+            "classes_held": 31,
+            "classes_attended": 29,
+            "attendance_pct": 93.5
+          },
+          {
+            "course_id": "C07",
+            "course_name": "Operations Research",
+            "classes_held": 36,
+            "classes_attended": 35,
+            "attendance_pct": 97.2
+          },
+          {
+            "course_id": "C08",
+            "course_name": "Consumer Behaviour",
+            "classes_held": 33,
+            "classes_attended": 31,
+            "attendance_pct": 93.9
+          },
+          {
+            "course_id": "C09",
+            "course_name": "Corporate Strategy",
+            "classes_held": 32,
+            "classes_attended": 23,
+            "attendance_pct": 71.9
+          }
+        ]
+      },
+      "courses": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "instructor": "Prof. D. Sharma",
+          "credits": 3,
+          "attendance_pct": 75.9,
+          "grade": "A+",
+          "marks_100": 91.0,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 36.2
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.0
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 19.5
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.0
+            }
+          ]
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "instructor": "Prof. A. Bhattacharya",
+          "credits": 3,
+          "attendance_pct": 93.5,
+          "grade": "A+",
+          "marks_100": 93.4,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 38.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 13.7
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 14.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.4
+            }
+          ]
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "instructor": "Prof. S. Nair",
+          "credits": 3,
+          "attendance_pct": 97.2,
+          "grade": "A+",
+          "marks_100": 90.2,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 37.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.3
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.2
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 18.3
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 9.4
+            }
+          ]
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "instructor": "Prof. K. Iyer",
+          "credits": 2,
+          "attendance_pct": 93.9,
+          "grade": "A",
+          "marks_100": 87.6,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 34.0
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 14.5
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 13.3
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.6
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.2
+            }
+          ]
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "instructor": "Prof. T. George",
+          "credits": 3,
+          "attendance_pct": 71.9,
+          "grade": "A",
+          "marks_100": 88.5,
+          "sections": [
+            {
+              "section": "end_term",
+              "max_marks": 40.0,
+              "marks_obtained": 37.3
+            },
+            {
+              "section": "assignments",
+              "max_marks": 15.0,
+              "marks_obtained": 12.8
+            },
+            {
+              "section": "quizzes",
+              "max_marks": 15.0,
+              "marks_obtained": 12.8
+            },
+            {
+              "section": "projects",
+              "max_marks": 20.0,
+              "marks_obtained": 17.1
+            },
+            {
+              "section": "class_participation",
+              "max_marks": 10.0,
+              "marks_obtained": 8.5
+            }
+          ]
+        }
+      ],
+      "grades": [
+        {
+          "course_id": "C02",
+          "course_name": "Corporate Finance",
+          "total_marks_100": 91.0,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C03",
+          "course_name": "Supply Chain Strategy",
+          "total_marks_100": 93.4,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C07",
+          "course_name": "Operations Research",
+          "total_marks_100": 90.2,
+          "letter_grade": "A+"
+        },
+        {
+          "course_id": "C08",
+          "course_name": "Consumer Behaviour",
+          "total_marks_100": 87.6,
+          "letter_grade": "A"
+        },
+        {
+          "course_id": "C09",
+          "course_name": "Corporate Strategy",
+          "total_marks_100": 88.5,
+          "letter_grade": "A"
+        }
+      ],
+      "projects": [],
+      "skills": [
+        "Corporate Finance",
+        "Modeling",
+        "Strategy",
+        "Consulting"
+      ],
+      "analytics": {
+        "course_count": 5,
+        "attendance_count": 5,
+        "project_count": 0,
+        "average_marks_100": 90.14,
+        "attendance_flags": [
+          "C02",
+          "C09"
+        ],
+        "project_topics": [
+          "Corporate Finance",
+          "Modeling",
+          "Strategy",
+          "Consulting"
+        ]
+      },
+      "placement_status": "unknown"
+    }
+  ]
+}

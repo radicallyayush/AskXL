@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XLRI Student 360 — Dossier Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#1B2A4A;
+    --ink-2:#243759;
+    --parchment:#EDEAE2;
+    --paper:#F7F5EF;
+    --slate:#435268;
+    --gold:#B98B2A;
+    --gold-soft:#E7D6AC;
+    --rust:#A63A32;
+    --moss:#5B7A5A;
+    --charcoal:#24272B;
+    --line:#D8D2C4;
+    --line-soft:#E4DFD3;
+    --white:#FFFFFF;
+    --radius:10px;
+    --shadow: 0 1px 2px rgba(27,42,74,0.06), 0 4px 14px rgba(27,42,74,0.06);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--parchment);color:var(--charcoal);font-family:'IBM Plex Sans',sans-serif;font-size:14px;}
+  .app{display:grid;grid-template-columns:280px 1fr;min-height:100vh;}
+  h1,h2,h3{font-family:'Source Serif 4',serif;margin:0;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+
+  /* ---------- Sidebar / Roster ---------- */
+  .sidebar{background:var(--ink);color:#EFE9DA;padding:22px 16px;display:flex;flex-direction:column;gap:18px;}
+  .brand{display:flex;align-items:center;gap:10px;padding-bottom:14px;border-bottom:1px solid rgba(239,233,218,0.15);}
+  .seal{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Source Serif 4',serif;font-weight:700;color:var(--gold);font-size:13px;flex-shrink:0;}
+  .brand-text .eyebrow{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-soft);opacity:0.8;}
+  .brand-text h1{font-size:16px;color:#F6F1E4;line-height:1.2;}
+
+  .roster-search{position:relative;}
+  .roster-search input{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(239,233,218,0.18);color:#EFE9DA;padding:9px 10px 9px 30px;border-radius:8px;font-size:13px;font-family:inherit;}
+  .roster-search input::placeholder{color:#9AA4B8;}
+  .roster-search::before{content:"⌕";position:absolute;left:10px;top:50%;transform:translateY(-50%);color:#9AA4B8;font-size:14px;}
+
+  .roster-list{display:flex;flex-direction:column;gap:6px;overflow-y:auto;flex:1;}
+  .roster-item{display:flex;align-items:center;gap:10px;padding:10px;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:background .15s ease;}
+  .roster-item:hover{background:rgba(255,255,255,0.05);}
+  .roster-item.active{background:rgba(185,139,42,0.15);border-color:rgba(185,139,42,0.4);}
+  .ring{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#F6F1E4;position:relative;}
+  .ring svg{position:absolute;inset:0;}
+  .roster-item .who{overflow:hidden;}
+  .roster-item .who .name{font-size:13px;color:#F3EEE1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .roster-item .who .meta{font-size:11px;color:#9AA4B8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+  .sidebar-footer{border-top:1px solid rgba(239,233,218,0.15);padding-top:14px;font-size:11px;color:#8E97AB;line-height:1.6;}
+
+  /* ---------- Main ---------- */
+  .main{padding:26px 34px 100px;overflow-y:auto;}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;gap:20px;}
+  .topbar .titles .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);}
+  .topbar h2{font-size:26px;margin-top:2px;}
+  .topbar .sub{color:var(--slate);font-size:13px;margin-top:4px;}
+  .stamp{display:inline-flex;align-items:center;gap:6px;border:1.5px solid currentColor;padding:4px 10px;border-radius:20px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;}
+  .stamp.placed{color:var(--moss);}
+  .stamp.progress{color:var(--gold);}
+  .stamp.pending{color:var(--slate);}
+
+  .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;}
+  .grid-full{grid-column:1 / -1;}
+  .card{background:var(--paper);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);}
+  .card h3{font-size:14px;letter-spacing:.02em;color:var(--ink);margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;}
+  .card h3 .tag{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--slate);text-transform:uppercase;letter-spacing:.08em;font-weight:400;}
+
+  .stat-row{display:flex;gap:22px;flex-wrap:wrap;}
+  .stat{display:flex;flex-direction:column;gap:2px;}
+  .stat .num{font-family:'Source Serif 4',serif;font-size:26px;color:var(--ink);}
+  .stat .label{font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.06em;}
+
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th{text-align:left;font-weight:500;color:var(--slate);font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding-bottom:8px;border-bottom:1px solid var(--line);}
+  td{padding:8px 0;border-bottom:1px solid var(--line-soft);}
+  tr:last-child td{border-bottom:none;}
+  .grade{font-family:'IBM Plex Mono',monospace;color:var(--ink);font-weight:500;}
+
+  .chip{display:inline-block;background:var(--white);border:1px solid var(--line);color:var(--ink-2);padding:4px 10px;border-radius:20px;font-size:12px;margin:0 6px 6px 0;}
+  .chip.skill{border-color:var(--gold-soft);background:#FBF6EA;color:#7A5B15;}
+
+  .project{border-left:2px solid var(--gold);padding:4px 0 4px 12px;margin-bottom:12px;}
+  .project:last-child{margin-bottom:0;}
+  .project .p-title{font-weight:600;color:var(--ink);font-size:13.5px;}
+  .project .p-meta{font-size:11px;color:var(--slate);margin:2px 0 4px;}
+  .project .p-desc{font-size:12.5px;color:var(--charcoal);line-height:1.5;}
+
+  .funnel{display:flex;flex-direction:column;gap:0;}
+  .funnel-step{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);}
+  .funnel-step:last-child{border-bottom:none;}
+  .funnel-dot{width:9px;height:9px;border-radius:50%;background:var(--line);flex-shrink:0;}
+  .funnel-step.done .funnel-dot{background:var(--moss);}
+  .funnel-step.current .funnel-dot{background:var(--gold);}
+  .funnel-step .f-label{font-size:12.5px;color:var(--charcoal);flex:1;}
+  .funnel-step.done .f-label{color:var(--moss);}
+  .funnel-step .f-note{font-size:11px;color:var(--slate);}
+
+  canvas{max-height:170px;}
+
+  .engagement-bar{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+  .engagement-bar .e-label{width:80px;font-size:11.5px;color:var(--slate);}
+  .engagement-track{flex:1;height:6px;background:var(--line-soft);border-radius:4px;overflow:hidden;}
+  .engagement-fill{height:100%;background:var(--ink);border-radius:4px;}
+
+  /* ---------- Common (institute-wide) chatbot ---------- */
+  .common-launcher{position:fixed;left:24px;bottom:24px;background:var(--ink);color:#F3EEE1;border:none;border-radius:30px;padding:12px 18px 12px 14px;display:flex;align-items:center;gap:9px;cursor:pointer;box-shadow:0 6px 20px rgba(27,42,74,0.35);font-family:'IBM Plex Sans',sans-serif;font-size:13px;z-index:40;}
+  .common-launcher .dot-badge{width:8px;height:8px;border-radius:50%;background:var(--gold);}
+  .common-panel{position:fixed;left:24px;bottom:24px;width:340px;max-height:480px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 40px rgba(27,42,74,0.25);display:none;flex-direction:column;overflow:hidden;z-index:41;}
+  .common-panel.open{display:flex;}
+  .chat-head{background:var(--ink);color:#F3EEE1;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;}
+  .chat-head .ch-title{display:flex;align-items:center;gap:8px;font-size:13px;}
+  .chat-head .ch-title .seal{width:22px;height:22px;font-size:10px;}
+  .chat-head button{background:none;border:none;color:#C9C2AE;font-size:16px;cursor:pointer;}
+  .chat-scope{background:#F6F1E4;color:#7A5B15;font-size:10.5px;padding:6px 16px;border-bottom:1px solid var(--line-soft);letter-spacing:.03em;}
+  .chat-body{flex:1;padding:14px 16px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:var(--paper);}
+  .msg{max-width:85%;padding:9px 12px;border-radius:10px;font-size:12.8px;line-height:1.5;}
+  .msg.bot{background:var(--white);border:1px solid var(--line-soft);align-self:flex-start;color:var(--charcoal);}
+  .msg.user{background:var(--ink);color:#F3EEE1;align-self:flex-end;}
+  .chat-suggest{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px;background:var(--paper);}
+  .suggest-chip{border:1px solid var(--line);background:var(--white);color:var(--slate);font-size:11px;padding:5px 9px;border-radius:14px;cursor:pointer;}
+  .suggest-chip:hover{border-color:var(--gold);color:#7A5B15;}
+  .chat-input{display:flex;border-top:1px solid var(--line-soft);background:var(--white);}
+  .chat-input input{flex:1;border:none;padding:12px 14px;font-size:13px;font-family:inherit;outline:none;}
+  .chat-input button{background:var(--gold);border:none;color:var(--white);width:44px;cursor:pointer;font-size:15px;}
+
+  /* ---------- Per-student chatbot drawer ---------- */
+  .student-chat-toggle{display:flex;align-items:center;gap:8px;background:#FBF6EA;border:1px solid var(--gold-soft);color:#7A5B15;padding:8px 14px;border-radius:8px;font-size:12.5px;cursor:pointer;font-family:inherit;}
+  .drawer-backdrop{position:fixed;inset:0;background:rgba(27,42,74,0.25);display:none;z-index:49;}
+  .drawer-backdrop.open{display:block;}
+  .student-drawer{position:fixed;right:-380px;top:0;bottom:0;width:360px;background:var(--white);border-left:1px solid var(--line);box-shadow:-8px 0 30px rgba(27,42,74,0.15);z-index:50;display:flex;flex-direction:column;transition:right .25s ease;}
+  .student-drawer.open{right:0;}
+  .drawer-head{background:var(--gold);color:#3C2C08;padding:16px;display:flex;align-items:center;justify-content:space-between;}
+  .drawer-head .dh-title{font-size:13px;}
+  .drawer-head .dh-title strong{display:block;font-family:'Source Serif 4',serif;font-size:16px;}
+  .drawer-head button{background:none;border:none;font-size:18px;color:#3C2C08;cursor:pointer;}
+  .drawer-scope{background:#FBF6EA;padding:8px 16px;font-size:11px;color:#7A5B15;border-bottom:1px solid var(--line-soft);}
+
+  ::-webkit-scrollbar{width:7px;}
+  ::-webkit-scrollbar-thumb{background:var(--line);border-radius:10px;}
+
+  @media (max-width:900px){
+    .app{grid-template-columns:1fr;}
+    .sidebar{display:none;}
+    .grid{grid-template-columns:1fr;}
+    .student-drawer{width:100%;right:-100%;}
+    .common-panel{width:calc(100% - 32px);}
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR: ROSTER ============ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="seal">XL</div>
+      <div class="brand-text">
+        <div class="eyebrow">XLRI · Registrar's Office</div>
+        <h1>Student 360 Dossier</h1>
+      </div>
+    </div>
+    <div class="roster-search">
+      <input type="text" id="rosterSearch" placeholder="Search roster…" oninput="filterRoster(this.value)">
+    </div>
+    <div class="roster-list" id="rosterList"></div>
+    <div class="sidebar-footer">
+      Sample data · 4 of 612 students shown<br>
+      Sources: SIS · LMS · Placement Cell · CV uploads
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <div class="topbar">
+      <div class="titles">
+        <div class="eyebrow" id="topEyebrow">Student Dossier</div>
+        <h2 id="topName">—</h2>
+        <div class="sub" id="topSub">—</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <div class="stamp" id="topStamp">—</div>
+        <button class="student-chat-toggle" onclick="openDrawer()">
+          ✎ Ask about <span id="chatToggleName">this student</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card grid-full">
+        <h3>Academic Standing <span class="tag">SIS · LMS</span></h3>
+        <div class="stat-row">
+          <div class="stat"><div class="num" id="statCgpa">—</div><div class="label">CGPA</div></div>
+          <div class="stat"><div class="num" id="statTerm">—</div><div class="label">Current Term</div></div>
+          <div class="stat"><div class="num" id="statBacklogs">—</div><div class="label">Backlogs</div></div>
+          <div class="stat"><div class="num" id="statAttend">—</div><div class="label">Attendance</div></div>
+          <div style="flex:1;min-width:180px;"><canvas id="cgpaChart"></canvas></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Courses — Current Term <span class="tag">LMS</span></h3>
+        <table>
+          <thead><tr><th>Course</th><th>Instructor</th><th>Grade</th></tr></thead>
+          <tbody id="courseTable"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>Placement Journey <span class="tag">Placement Cell</span></h3>
+        <div class="funnel" id="funnel"></div>
+      </div>
+
+      <div class="card">
+        <h3>Projects <span class="tag">Project Repository</span></h3>
+        <div id="projectsList"></div>
+      </div>
+
+      <div class="card">
+        <h3>Skills &amp; Certifications <span class="tag">CV · Derived</span></h3>
+        <div style="margin-bottom:10px;" id="skillsTech"></div>
+        <div id="skillsDomain"></div>
+      </div>
+
+      <div class="card grid-full">
+        <h3>Engagement Signals <span class="tag">Attendance · LMS Activity</span></h3>
+        <div id="engagement"></div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- ============ COMMON (INSTITUTE-WIDE) CHATBOT ============ -->
+<button class="common-launcher" id="commonLauncher" onclick="toggleCommon()">
+  <span class="dot-badge"></span> Institute Assistant
+</button>
+<div class="common-panel" id="commonPanel">
+  <div class="chat-head">
+    <div class="ch-title"><div class="seal" style="border-color:#F6F1E4;color:#F6F1E4;">XL</div> Institute Assistant</div>
+    <button onclick="toggleCommon()">✕</button>
+  </div>
+  <div class="chat-scope">Scope: all students · aggregated, non-confidential data only</div>
+  <div class="chat-body" id="commonBody">
+    <div class="msg bot">Hi, I'm the Institute Assistant. Ask me anything across the student body — placements, cohort performance, program stats. For grades or personal details of a specific student, use that student's own assistant.</div>
+  </div>
+  <div class="chat-suggest">
+    <button class="suggest-chip" onclick="askCommon('How many students are placed so far?')">Placed so far?</button>
+    <button class="suggest-chip" onclick="askCommon('Average CGPA across the batch')">Avg CGPA</button>
+    <button class="suggest-chip" onclick="askCommon('Top skills across cohort')">Top skills</button>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="commonInput" placeholder="Ask about the cohort…" onkeydown="if(event.key==='Enter')sendCommon()">
+    <button onclick="sendCommon()">→</button>
+  </div>
+</div>
+
+<!-- ============ PER-STUDENT CHATBOT DRAWER ============ -->
+<div class="drawer-backdrop" id="drawerBackdrop" onclick="closeDrawer()"></div>
+<div class="student-drawer" id="studentDrawer">
+  <div class="drawer-head">
+    <div class="dh-title">Student Assistant<strong id="drawerName">—</strong></div>
+    <button onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-scope">Scope: this student's dossier only — courses, projects, CV, placement status</div>
+  <div class="chat-body" id="drawerBody"></div>
+  <div class="chat-suggest" id="drawerSuggest"></div>
+  <div class="chat-input">
+    <input type="text" id="drawerInput" placeholder="Ask about this student…" onkeydown="if(event.key==='Enter')sendDrawer()">
+    <button onclick="sendDrawer()">→</button>
+  </div>
+</div>
+
+<script>
+/* ================= SAMPLE DATA ================= */
+/* In production, each of these objects is generated from a per-student
+   .md dossier file (structured frontmatter + narrative sections). */
+const students = [
+  {
+    id:"XLRI-2025-0142", name:"Ananya Rao", program:"PGDM", term:3, totalTerms:6,
+    cgpa:8.4, cgpaTrend:[7.9,8.1,8.4], backlogs:0, attendance:"93%",
+    placementStatus:"progress",
+    courses:[
+      {c:"Marketing Analytics", i:"Prof. R. Sinha", g:"A"},
+      {c:"Consumer Behaviour", i:"Prof. K. Iyer", g:"A-"},
+      {c:"Business Statistics II", i:"Prof. M. Das", g:"B+"},
+    ],
+    projects:[
+      {t:"Churn Prediction for a Telecom Client", meta:"Live Project · Team of 4 · Marketing Analytics", d:"Built a logistic regression + XGBoost ensemble to flag at-risk subscribers; presented retention playbook to the client's CX team."},
+      {t:"Brand Repositioning Study — Regional FMCG", meta:"Course Project · Consumer Behaviour", d:"Conducted 40-respondent qualitative study and proposed a repositioning strategy adopted as the term's top submission."},
+    ],
+    skillsTech:["Python","SQL","Power BI","Tableau"],
+    skillsDomain:["Marketing Analytics","Consumer Research"],
+    certs:["Google Analytics Certified"],
+    funnel:[
+      {label:"Registered for Placement", state:"done", note:"Term 3"},
+      {label:"Summer Internship — Completed", state:"done", note:"Ogilvy, Brand Strategy"},
+      {label:"Pre-Placement Talks Attended", state:"done", note:"6 companies"},
+      {label:"Interview Shortlists", state:"current", note:"2 pending"},
+      {label:"Final Offer", state:"pending", note:"—"},
+    ],
+    engagement:[
+      {label:"Attendance", pct:93},
+      {label:"LMS Activity", pct:81},
+      {label:"Assignment Timeliness", pct:88},
+    ],
+    aiSummary:"Term 3 PGDM student, strong in marketing analytics, actively interviewing after a well-reviewed summer internship at Ogilvy.",
+  },
+  {
+    id:"XLRI-2025-0087", name:"Rohan Mehta", program:"PGDM-GM", term:5, totalTerms:6,
+    cgpa:7.6, cgpaTrend:[7.1,7.3,7.5,7.4,7.6], backlogs:0, attendance:"88%",
+    placementStatus:"placed",
+    courses:[
+      {c:"Supply Chain Strategy", i:"Prof. A. Bhattacharya", g:"A"},
+      {c:"Operations Research", i:"Prof. S. Nair", g:"B+"},
+      {c:"Global Business Environment", i:"Prof. T. George", g:"B+"},
+    ],
+    projects:[
+      {t:"Warehouse Network Redesign", meta:"Live Project · Team of 3 · Supply Chain Strategy", d:"Modeled a 12-warehouse network reconfiguration cutting projected logistics cost by 9%."},
+      {t:"Vendor Risk Scoring Tool", meta:"Independent Project", d:"Built a spreadsheet-based vendor risk model later adopted informally by the operations club."},
+    ],
+    skillsTech:["Excel Modeling","SQL","AnyLogic"],
+    skillsDomain:["Supply Chain","Operations Strategy"],
+    certs:["Six Sigma Green Belt"],
+    funnel:[
+      {label:"Registered for Placement", state:"done", note:"Term 1"},
+      {label:"Summer Internship — Completed", state:"done", note:"Deloitte, Supply Chain Consulting"},
+      {label:"Pre-Placement Talks Attended", state:"done", note:"9 companies"},
+      {label:"Interview Shortlists", state:"done", note:"3 shortlists"},
+      {label:"Final Offer — Accepted", state:"done", note:"Deloitte, PPO"},
+    ],
+    engagement:[
+      {label:"Attendance", pct:88},
+      {label:"LMS Activity", pct:74},
+      {label:"Assignment Timeliness", pct:90},
+    ],
+    aiSummary:"Term 5 PGDM-GM student, placed via PPO at Deloitte after a strong supply-chain internship; now focused on the FPM elective track.",
+  },
+  {
+    id:"XLRI-2025-0203", name:"Fatima Sheikh", program:"PGDM-HRM", term:2, totalTerms:6,
+    cgpa:8.9, cgpaTrend:[8.7,8.9], backlogs:0, attendance:"97%",
+    placementStatus:"pending",
+    courses:[
+      {c:"Organizational Behaviour", i:"Prof. N. Kapoor", g:"A"},
+      {c:"HR Analytics", i:"Prof. R. Sinha", g:"A"},
+      {c:"Labour Law", i:"Prof. V. Menon", g:"A-"},
+    ],
+    projects:[
+      {t:"Attrition Root-Cause Study — Manufacturing Client", meta:"Live Project · Team of 4 · HR Analytics", d:"Surveyed 220 shop-floor employees and identified shift-scheduling as the leading attrition driver; recommendations under client review."},
+    ],
+    skillsTech:["SPSS","Power BI"],
+    skillsDomain:["HR Analytics","Organizational Design"],
+    certs:[],
+    funnel:[
+      {label:"Registered for Placement", state:"done", note:"Term 1"},
+      {label:"Summer Internship — Scheduled", state:"current", note:"Term 3"},
+      {label:"Pre-Placement Talks Attended", state:"pending", note:"—"},
+      {label:"Interview Shortlists", state:"pending", note:"—"},
+      {label:"Final Offer", state:"pending", note:"—"},
+    ],
+    engagement:[
+      {label:"Attendance", pct:97},
+      {label:"LMS Activity", pct:92},
+      {label:"Assignment Timeliness", pct:95},
+    ],
+    aiSummary:"Term 2 PGDM-HRM student, top-of-cohort CGPA, summer internship scheduled for Term 3; no placement activity yet.",
+  },
+  {
+    id:"XLRI-2025-0031", name:"Karan Verma", program:"FPM", term:6, totalTerms:8,
+    cgpa:8.1, cgpaTrend:[7.8,7.9,8.0,8.0,8.1,8.1], backlogs:0, attendance:"90%",
+    placementStatus:"placed",
+    courses:[
+      {c:"Advanced Corporate Finance", i:"Prof. D. Sharma", g:"A"},
+      {c:"Research Methods III", i:"Prof. P. Chandra", g:"A"},
+    ],
+    projects:[
+      {t:"Working Paper: Capital Structure in Indian Mid-Caps", meta:"Doctoral Research · Solo", d:"Submitted to a peer-reviewed finance journal; under second-round review."},
+      {t:"Teaching Assistantship — Corporate Finance", meta:"Term 5-6", d:"Led tutorials for 60 PGDM students; designed the term's case-study bank."},
+    ],
+    skillsTech:["R","Stata","Python"],
+    skillsDomain:["Corporate Finance", "Empirical Research"],
+    certs:[],
+    funnel:[
+      {label:"Registered for Placement", state:"done", note:"Term 5"},
+      {label:"Campus Interviews — Faculty Track", state:"done", note:"2 institutes"},
+      {label:"Final Offer — Accepted", state:"done", note:"Assistant Professor, IIM-adjacent institute"},
+    ],
+    engagement:[
+      {label:"Attendance", pct:90},
+      {label:"LMS Activity", pct:70},
+      {label:"Assignment Timeliness", pct:96},
+    ],
+    aiSummary:"Term 6 FPM scholar in corporate finance, accepted a faculty offer; currently finalizing a journal submission.",
+  },
+];
+
+let currentStudent = students[0];
+
+/* ================= ROSTER ================= */
+function ringSVG(term,total,color){
+  const r=15, c=2*Math.PI*r, pct=term/total, dash=c*pct;
+  return `<svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="${r}" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"/>
+  <circle cx="18" cy="18" r="${r}" fill="none" stroke="${color}" stroke-width="3" stroke-dasharray="${dash} ${c}" stroke-linecap="round" transform="rotate(-90 18 18)"/></svg>`;
+}
+function renderRoster(list){
+  const el = document.getElementById('rosterList');
+  el.innerHTML = list.map(s=>{
+    const color = s.placementStatus==='placed' ? '#5B7A5A' : s.placementStatus==='progress' ? '#B98B2A' : '#8E97AB';
+    return `<div class="roster-item ${s.id===currentStudent.id?'active':''}" onclick="selectStudent('${s.id}')">
+      <div class="ring">${ringSVG(s.term,s.totalTerms,color)}</div>
+      <div class="who">
+        <div class="name">${s.name}</div>
+        <div class="meta">${s.program} · T${s.term}/${s.totalTerms} · ${s.cgpa}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+function filterRoster(q){
+  q=q.toLowerCase();
+  renderRoster(students.filter(s=>s.name.toLowerCase().includes(q)||s.program.toLowerCase().includes(q)));
+}
+
+/* ================= MAIN PANEL RENDER ================= */
+let chartRef;
+function selectStudent(id){
+  currentStudent = students.find(s=>s.id===id);
+  renderRoster(students);
+  renderMain();
+  document.getElementById('drawerName').textContent = currentStudent.name;
+  document.getElementById('chatToggleName').textContent = currentStudent.name.split(' ')[0];
+  resetDrawerChat();
+}
+function stampInfo(status){
+  if(status==='placed') return {cls:'placed', label:'● Placed'};
+  if(status==='progress') return {cls:'progress', label:'● In Process'};
+  return {cls:'pending', label:'● Not Started'};
+}
+function renderMain(){
+  const s = currentStudent;
+  document.getElementById('topName').textContent = s.name;
+  document.getElementById('topSub').textContent = `${s.program} · Term ${s.term} of ${s.totalTerms} · ID ${s.id}`;
+  const st = stampInfo(s.placementStatus);
+  const stampEl = document.getElementById('topStamp');
+  stampEl.className = 'stamp '+st.cls;
+  stampEl.textContent = st.label;
+
+  document.getElementById('statCgpa').textContent = s.cgpa.toFixed(1);
+  document.getElementById('statTerm').textContent = s.term+'/'+s.totalTerms;
+  document.getElementById('statBacklogs').textContent = s.backlogs;
+  document.getElementById('statAttend').textContent = s.attendance;
+
+  document.getElementById('courseTable').innerHTML = s.courses.map(c=>
+    `<tr><td>${c.c}</td><td>${c.i}</td><td class="grade">${c.g}</td></tr>`).join('');
+
+  document.getElementById('funnel').innerHTML = s.funnel.map(f=>
+    `<div class="funnel-step ${f.state}"><div class="funnel-dot"></div><div class="f-label">${f.label}</div><div class="f-note mono">${f.note}</div></div>`).join('');
+
+  document.getElementById('projectsList').innerHTML = s.projects.map(p=>
+    `<div class="project"><div class="p-title">${p.t}</div><div class="p-meta">${p.meta}</div><div class="p-desc">${p.d}</div></div>`).join('');
+
+  document.getElementById('skillsTech').innerHTML = s.skillsTech.map(sk=>`<span class="chip skill">${sk}</span>`).join('')
+    + s.certs.map(c=>`<span class="chip skill">🎓 ${c}</span>`).join('');
+  document.getElementById('skillsDomain').innerHTML = s.skillsDomain.map(sk=>`<span class="chip">${sk}</span>`).join('');
+
+  document.getElementById('engagement').innerHTML = s.engagement.map(e=>
+    `<div class="engagement-bar"><div class="e-label">${e.label}</div><div class="engagement-track"><div class="engagement-fill" style="width:${e.pct}%"></div></div><div class="mono" style="font-size:11px;color:var(--slate);width:32px;">${e.pct}%</div></div>`).join('');
+
+  if(chartRef) chartRef.destroy();
+  const ctx = document.getElementById('cgpaChart').getContext('2d');
+  chartRef = new Chart(ctx,{
+    type:'line',
+    data:{
+      labels:s.cgpaTrend.map((_,i)=>'T'+(i+1)),
+      datasets:[{data:s.cgpaTrend, borderColor:'#B98B2A', backgroundColor:'rgba(185,139,42,0.12)', fill:true, tension:0.35, pointRadius:3, pointBackgroundColor:'#1B2A4A'}]
+    },
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{ y:{ min:6, max:10, grid:{color:'#E4DFD3'}, ticks:{font:{size:10}} }, x:{ grid:{display:false}, ticks:{font:{size:10}} } }
+    }
+  });
+}
+
+/* ================= COMMON (INSTITUTE-WIDE) CHATBOT ================= */
+function toggleCommon(){
+  document.getElementById('commonPanel').classList.toggle('open');
+}
+function pushMsg(containerId, role, text){
+  const el = document.getElementById(containerId);
+  const div = document.createElement('div');
+  div.className = 'msg '+role;
+  div.textContent = text;
+  el.appendChild(div);
+  el.scrollTop = el.scrollHeight;
+}
+function askCommon(q){
+  document.getElementById('commonInput').value = q;
+  sendCommon();
+}
+function sendCommon(){
+  const input = document.getElementById('commonInput');
+  const q = input.value.trim();
+  if(!q) return;
+  pushMsg('commonBody','user',q);
+  input.value='';
+  setTimeout(()=>pushMsg('commonBody','bot', answerCommon(q)), 350);
+}
+function answerCommon(q){
+  const ql = q.toLowerCase();
+  const placedCount = students.filter(s=>s.placementStatus==='placed').length;
+  const avgCgpa = (students.reduce((a,s)=>a+s.cgpa,0)/students.length).toFixed(2);
+  const allSkills = {};
+  students.forEach(s=>[...s.skillsTech,...s.skillsDomain].forEach(sk=>allSkills[sk]=(allSkills[sk]||0)+1));
+  const topSkills = Object.entries(allSkills).sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0]).join(', ');
+
+  if(ql.includes('placed')) return `${placedCount} of ${students.length} students in this sample cohort have accepted a final offer. (In production this pulls from the Placement Cell feed across the full batch.)`;
+  if(ql.includes('cgpa')) return `Average CGPA across this sample cohort is ${avgCgpa}. Individual trends are on each student's dossier.`;
+  if(ql.includes('skill')) return `The most common skills across the cohort right now: ${topSkills}.`;
+  return `I can answer cohort-level questions — placement rates, average performance, skill distribution, program breakdowns. For a specific student's grades or CV details, open their dossier and use their own assistant, which is scoped to that student's records.`;
+}
+
+/* ================= PER-STUDENT CHATBOT DRAWER ================= */
+function openDrawer(){
+  document.getElementById('studentDrawer').classList.add('open');
+  document.getElementById('drawerBackdrop').classList.add('open');
+}
+function closeDrawer(){
+  document.getElementById('studentDrawer').classList.remove('open');
+  document.getElementById('drawerBackdrop').classList.remove('open');
+}
+function resetDrawerChat(){
+  const s = currentStudent;
+  document.getElementById('drawerBody').innerHTML = '';
+  pushMsg('drawerBody','bot', `You're talking with ${s.name}'s assistant. ${s.aiSummary}`);
+  document.getElementById('drawerSuggest').innerHTML = `
+    <button class="suggest-chip" onclick="askDrawer('Summarize their projects')">Summarize projects</button>
+    <button class="suggest-chip" onclick="askDrawer('What is their placement status?')">Placement status</button>
+    <button class="suggest-chip" onclick="askDrawer('What skills do they have?')">Skills</button>`;
+}
+function askDrawer(q){
+  document.getElementById('drawerInput').value = q;
+  sendDrawer();
+}
+function sendDrawer(){
+  const input = document.getElementById('drawerInput');
+  const q = input.value.trim();
+  if(!q) return;
+  pushMsg('drawerBody','user',q);
+  input.value='';
+  setTimeout(()=>pushMsg('drawerBody','bot', answerDrawer(q)), 350);
+}
+function answerDrawer(q){
+  const s = currentStudent;
+  const ql = q.toLowerCase();
+  if(ql.includes('project')) return s.projects.map(p=>`• ${p.t} (${p.meta})`).join('\n');
+  if(ql.includes('placement') || ql.includes('offer')) {
+    const last = s.funnel[s.funnel.length-1];
+    return `Current stage: "${s.funnel.find(f=>f.state==='current')?.label || last.label}". Status: ${s.placementStatus}.`;
+  }
+  if(ql.includes('skill')) return `Technical: ${s.skillsTech.join(', ')}. Domain: ${s.skillsDomain.join(', ')}.${s.certs.length?' Certifications: '+s.certs.join(', ')+'.':''}`;
+  if(ql.includes('cgpa') || ql.includes('grade')) return `Current CGPA: ${s.cgpa}, Term ${s.term} of ${s.totalTerms}, ${s.backlogs} backlog(s).`;
+  return `${s.aiSummary} Ask me about their courses, projects, skills, or placement journey — this assistant is scoped only to ${s.name}'s dossier.`;
+}
+
+/* ================= INIT ================= */
+renderRoster(students);
+renderMain();
+document.getElementById('drawerName').textContent = currentStudent.name;
+document.getElementById('chatToggleName').textContent = currentStudent.name.split(' ')[0];
+resetDrawerChat();
+</script>
+</body>
+</html>
