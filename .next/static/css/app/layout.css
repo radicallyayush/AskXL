@@ -657,6 +657,9 @@ video {
 .h-9 {
   height: 2.25rem;
 }
+.h-80 {
+  height: 20rem;
+}
 .min-h-\[42rem\] {
   min-height: 42rem;
 }

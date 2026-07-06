@@ -5,7 +5,7 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { StudentRecord } from "@/lib/types";
 
-const chartTickStyle = { fill: "#cbd5e1", fontSize: 12 };
+const chartTickStyle = { fill: "#64748b", fontSize: 12 };
 const chartTooltipStyle = {
   contentStyle: {
     backgroundColor: "#0f172a",
@@ -33,12 +33,12 @@ export function StudentCharts({ student }: { student: StudentRecord }) {
         <CardHeader>
           <CardTitle className="text-slate-900">Attendance by course</CardTitle>
         </CardHeader>
-        <CardContent className="h-72">
+        <CardContent className="h-80">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={attendanceData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.25)" />
-              <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} interval={0} tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.35)" }} tickLine={false} />
-              <YAxis tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.35)" }} tickLine={false} />
+            <BarChart data={attendanceData} margin={{ top: 8, right: 16, left: 0, bottom: 56 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.28)" />
+              <XAxis dataKey="name" angle={-18} textAnchor="end" height={92} interval={0} tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.5)" }} tickLine={false} />
+              <YAxis tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.5)" }} tickLine={false} />
               <Tooltip cursor={{ fill: "rgba(148, 163, 184, 0.12)" }} {...chartTooltipStyle} />
               <Bar dataKey="value" fill="#60a5fa" radius={[10, 10, 0, 0]} />
             </BarChart>
@@ -49,12 +49,12 @@ export function StudentCharts({ student }: { student: StudentRecord }) {
         <CardHeader>
           <CardTitle className="text-slate-900">Marks by course</CardTitle>
         </CardHeader>
-        <CardContent className="h-72">
+        <CardContent className="h-80">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={gradeData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.25)" />
-              <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} interval={0} tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.35)" }} tickLine={false} />
-              <YAxis tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.35)" }} tickLine={false} />
+            <BarChart data={gradeData} margin={{ top: 8, right: 16, left: 0, bottom: 56 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.28)" />
+              <XAxis dataKey="name" angle={-18} textAnchor="end" height={92} interval={0} tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.5)" }} tickLine={false} />
+              <YAxis tick={chartTickStyle} axisLine={{ stroke: "rgba(148, 163, 184, 0.5)" }} tickLine={false} />
               <Tooltip cursor={{ fill: "rgba(148, 163, 184, 0.12)" }} {...chartTooltipStyle} />
               <Bar dataKey="value" fill="#818cf8" radius={[10, 10, 0, 0]} />
             </BarChart>
